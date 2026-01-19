@@ -4,7 +4,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters, CommandHandler
 
 # === CONFIG ===
-BOT_TOKEN = "8500525392:AAEe83NqicZntd5NmWUwLur46E6fpKiMJZ0"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 HOST_ID = 8185786988
 DOWNLOAD_DIR = "downloads"
 # ==============
